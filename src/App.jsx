@@ -54,7 +54,7 @@ function App() {
          {/* <Navbar/>  */} 
 
 
-         {/* <Link to="/">home/</Link>
+          {/* <Link to="/">home/</Link>
          <Link to="/Navbar">Navbar/</Link>
           <Link to="/Count">Count</Link>
 
@@ -65,7 +65,7 @@ function App() {
   <Route element={ <Name/>} path="/"/>
   <Route element={ <Navbar/>} path="/Navbar"/>
   <Route element={ <Count />} path="/Count"/>
- 
+  
 
 
 </Routes> */}
@@ -80,7 +80,7 @@ function App() {
 
 
 
-        <ApiCall/>
+        {/* <ApiCall/> */}
 
        {/* <ApiCallTwo/> */}
 
@@ -92,11 +92,20 @@ function App() {
         {/* <Formtwo/> */}
 
 
-        {/* <GroceryList /> */}
+        <GroceryList />
 
 
 
-</CounterProvider>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +114,8 @@ function App() {
 
 
       {/* </BrowserRouter> */}
+
+      </CounterProvider>
 
 
     </div>

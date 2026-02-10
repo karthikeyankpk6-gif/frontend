@@ -27,7 +27,7 @@ export default function GroceryList() {
     }
 
     const handledelete = async (id) => {
-        let datadelete = await axios.delete("http://localhost:3000/todoList/" +id)
+        let datadelete = await axios.delete("http://localhost:3000/todoList/" + id)
         handleget()
 
 
@@ -36,12 +36,12 @@ export default function GroceryList() {
     const handleedit = async (data) => {
         let dataedits = prompt("enter u name", data.list)
 
-        let body={
-            id:data.id,
-            list:dataedits
+        let body = {
+            id: data.id,
+            list: dataedits
         }
 
-        let datadelete = await axios.put("http://localhost:3000/todoList/"+ data.id,body)
+        let datadelete = await axios.put("http://localhost:3000/todoList/" + data.id, body)
 
         handleget()
 
@@ -78,7 +78,7 @@ export default function GroceryList() {
             <h1>grocerylist</h1>
 
             <input ref={inputRef} onChange={handleadd} placeholder="enter u name" />
-            <button onClick={handlepost} class="btn btn-primary ms-2">ADD</button>
+        <button onClick={handlepost} type="button" class="btn btn-primary ms-2" >ADD{""}</button>
 
 
             {list.map((da, i) => (
@@ -86,8 +86,8 @@ export default function GroceryList() {
                     <h2>{i + 1}. {da.list}</h2>
 
 
-                    <button onClick={()=>handleedit(da)} class="btn btn-warning ms-2">EDITS{""}</button>
-                    <button onClick={()=>handledelete(da.id)} class="btn btn-danger ms-2">DELETE</button>
+                    <button onClick={() => handleedit(da)} class="btn btn-warning ms-2">EDITS{""}</button>
+                    <button onClick={() => handledelete(da.id)} class="btn btn-danger ms-2">DELETE</button>
 
                 </div>
             ))}
