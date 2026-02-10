@@ -28,7 +28,7 @@ function CompA(){
         <div>
 
           <h2>ONE-{count}</h2>
-          <button onClick={handleadd}>CLICK</button>
+          <button onClick={handleadd} class="btn btn-primary ms-2">CLICK</button>
 
 
           <CompB/>

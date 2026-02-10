@@ -2,59 +2,66 @@ import React, { Children, useState } from "react";
 import { CounterContext } from "./CounterContext";
 
 
+export const CounterProvider = ({children}) => {
 
-export const CounterProvider = ( {children})=>{
+    const [count, setcount] = useState(0)
 
-    const[count,setcount]=useState(0)
-
-    const handleadd=()=>{
-        setcount(count+1)
+    const handleadd = () => {
+        setcount(count + 1)
     }
 
 
-    
-
-    
 
 
 
 
-  
+    return (
+        <div>
+
+           
 
 
 
-    return(
+            <CounterContext.Provider value={{count, handleadd }}>
+                {children}
 
-       
-        
-
-
-
-        
-
-        <CounterContext.Provider value={{count,handleadd}}>
-            {children}
-            
-
-        </CounterContext.Provider>
+            </CounterContext.Provider>
 
 
 
 
-        
 
-        
-     
 
-       
-      
 
-       
 
-            
-            
-       
 
-       
+        </div>
+
     )
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

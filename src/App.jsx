@@ -12,58 +12,88 @@ import CompA from './component/CompA'
 import { CounterProvider } from './component/context/CounterProvider'
 import GroceryList from './component/GroceryList'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 
 
-function App(){
+function App() {
 
-  
 
-  
 
-  
-  return(
-   <div>
 
-   
 
+
+  return (
+    <div>
+
+      <CounterProvider>
+
+
+
+
+
+
+
+
+
+
+      {/* <BrowserRouter> */}
+
+
+
+        {/* <Count /> */}
+
+        {/* <Navbar/>  */}
+
+        {/* <Name/> */}
+
+        {/* <Product/> */}
+
+        <CompA/>
+
+         {/* <Navbar/>  */} 
+
+
+         {/* <Link to="/">home/</Link>
+         <Link to="/Navbar">Navbar/</Link>
+          <Link to="/Count">Count</Link>
+
+         
+
+<Routes>
+
+  <Route element={ <Name/>} path="/"/>
+  <Route element={ <Navbar/>} path="/Navbar"/>
+  <Route element={ <Count />} path="/Count"/>
+ 
+
+
+</Routes> */}
+
+        
+
+
+
+       
+    
     
 
-   <CounterProvider>
 
-    
-  
 
-  
-  
+        {/* <ApiCall/> */}
 
-    
-   
-   {/* <Navbar/>  */}
 
-   {/* <Name/> */}
+        {/* <ApiCallTwo/> */}
 
-   {/* <Product/> */}
+        {/* <Formone /> */}
 
-   {/* <Count/> */}
+        {/* <Formtwo/> */}
+
+
+        {/* <GroceryList /> */}
 
 
 
-    {/* <ApiCall/> */}
-
-
-    {/* <ApiCallTwo/> */}
-
-    {/* <Formone/> */}
-
-    {/* <Formtwo/> */}
-
-    {/* <CompA/> */}
-    {/* <GroceryList/> */}
-
-<h1>karthikeyan</h1>
-<h2>hello</h2>
-   
 </CounterProvider>
 
 
@@ -72,13 +102,12 @@ function App(){
 
 
 
-
-   
-
+      {/* </BrowserRouter> */}
 
 
+    </div>
 
-   </div>
   )
+
 }
 export default App
