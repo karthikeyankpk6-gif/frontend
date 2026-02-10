@@ -80,9 +80,9 @@ function App() {
 
 
 
-        {/* <ApiCall/> */}
+        <ApiCall/>
 
-       <ApiCallTwo/>
+       {/* <ApiCallTwo/> */}
 
 
        
