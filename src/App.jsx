@@ -80,7 +80,7 @@ function App() {
 
 
 
-        {/* <ApiCall/> */}
+        <ApiCall/>
 
        {/* <ApiCallTwo/> */}
 
@@ -92,7 +92,7 @@ function App() {
         {/* <Formtwo/> */}
 
 
-        <GroceryList />
+        {/* <GroceryList /> */}
 
 
 

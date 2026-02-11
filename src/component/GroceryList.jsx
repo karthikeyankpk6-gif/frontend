@@ -9,6 +9,7 @@ export default function GroceryList() {
 
     const handleadd = (e) => {
         setitem(e.target.value)
+       
     }
 
     const handleget = async () => {
@@ -22,28 +23,29 @@ export default function GroceryList() {
         }
 
         let datapost = await axios.post("http://localhost:3000/todoList", body)
+
         handleget()
 
     }
 
     const handledelete = async (id) => {
+
         let datadelete = await axios.delete("http://localhost:3000/todoList/" + id)
         handleget()
 
-
     }
 
-    const handleedit = async (data) => {
-        let dataedits = prompt("enter u name", data.list)
+    const handleedits=async(data)=>{
+        let dataedits=prompt("enter u name",data.list)
 
-        let body = {
-            id: data.id,
-            list: dataedits
+        let body={
+            id:data.id,
+            list:dataedits
         }
 
-        let datadelete = await axios.put("http://localhost:3000/todoList/" + data.id, body)
+        let dataedit = await axios.put("http://localhost:3000/todoList/"+data.id,body)
 
-        handleget()
+         handleget()
 
     }
 
@@ -54,10 +56,10 @@ export default function GroceryList() {
 
 
 
-    useEffect(() => {
-        inputRef.current.focus()
+    // useEffect(() => {
+    //     inputRef.current.focus()
 
-    }, [])
+    // }, [])
 
     // useEffect(() => {
     //     handleget()
@@ -77,22 +79,30 @@ export default function GroceryList() {
         <div>
             <h1>grocerylist</h1>
 
-            <input ref={inputRef} onChange={handleadd} placeholder="enter u name" />
-        <button onClick={handlepost} type="button" class="btn btn-primary ms-2" >ADD{""}</button>
+           <input onChange={handleadd} placeholder="enter"/>
+           <button onClick={handlepost} class="btn btn-primary ms-2">ADD</button>
 
 
-            {list.map((da, i) => (
-                <div>
-                    <h2>{i + 1}. {da.list}</h2>
+           
+
+           
 
 
-                    <button onClick={() => handleedit(da)} class="btn btn-warning ms-2">EDITS{""}</button>
-                    <button onClick={() => handledelete(da.id)} class="btn btn-danger ms-2">DELETE</button>
+           {list.map((da,i)=>(
+            <div> 
 
-                </div>
-            ))}
+               <h3>{i+1}.{da.list}</h3> 
 
 
+                <button onClick={()=> handleedits(da)} class="btn btn-warning ms-2">EDITS{""}</button>
+                <button onClick={()=> handledelete(da.id)} class="btn btn-danger ms-2">DELETE</button>
+
+
+
+
+            </div>
+
+           ))}
 
 
 
