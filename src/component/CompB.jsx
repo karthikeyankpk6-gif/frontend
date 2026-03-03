@@ -6,8 +6,7 @@ import { CounterContext } from "./context/CounterContext";
 
 
 export default function CompB(){
-
-   const{count}=useContext(CounterContext)
+    const{count}=useContext(CounterContext)
 
    
   

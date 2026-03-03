@@ -4,30 +4,31 @@ import React, { useState } from "react";
 
 function Name() {
 
-    const [name, setname] = useState("zoro")
+    const[item,setitem]=useState("anjaan")
 
-    const handlename = () => {
+    const handleadd=()=>{
 
-        if(name=="luffy")
-            setname("zoro")
+        if(item=="anjaan"){
+            setitem("krt")
 
-          else
-            setname("luffy")
-            
-        
+        }
+        else{
+            setitem("anjaan")
+        }
 
+    }
 
 
        
-    }
+    
 
     return (
 
         <div>
-            <h1>{name}</h1>
 
-
-            <button onClick={handlename}>change</button>
+           <h2>{item}</h2>
+            <button onClick={handleadd} class="btn btn-primary">ADD</button>
+            
 
 
 

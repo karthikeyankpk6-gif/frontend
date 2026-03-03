@@ -5,22 +5,27 @@ import { Form, useForm } from "react-hook-form";
 function Formone() {
 
   const inputref = useRef(null)
+
   const [name, setname] = useState("")
   const [age, setage] = useState("")
 
-  const handleadd = (e) => {
+  const handlename = (e) => {
     setname(e.target.value)
+
   }
-  const handleone = (e) => {
+  const handleeage = (e) => {
     setage(e.target.value)
+
   }
 
 
 
-  // useEffect(()=>{
-  //   inputref.current.focus()
 
-  // },[])
+
+  useEffect(()=>{
+    inputref.current.focus()
+
+  },[])
 
 
 
@@ -32,16 +37,23 @@ function Formone() {
     <div>
 
       <label>NAME:</label>
-      <input onChange={handleadd} placeholder="ENTER" />
-      <br></br>
-      <label>AGE</label>
-      <input onChange={handleone} placeholder="ENTER" />
-      <br></br>
-      <button>SUBMIT</button>
+      <input ref={inputref} onChange={handlename} placeholder="enter" />
+      <br/>
+      <label>AGE:</label>
+      <input onChange={handleeage} placeholder="enter" />
+      <br/>
+      <button class="btn btn-primary ms-2">SUBMIT</button>
 
 
-      <h2>OUTPUT</h2>
-      {name}{age}
+
+      <h3>OUTPUT</h3>
+
+      <h2>{name}{age}</h2>
+
+
+
+
+
 
 
 

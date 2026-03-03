@@ -37,6 +37,7 @@ function App() {
 
 
 
+
       {/* <BrowserRouter> */}
 
 
@@ -51,10 +52,10 @@ function App() {
 
         {/* <CompA/> */}
 
-         {/* <Navbar/>  */} 
+        {/* <Navbar/>  */}
 
 
-          {/* <Link to="/">home/</Link>
+        {/* <Link to="/">home/</Link>
          <Link to="/Navbar">Navbar/</Link>
           <Link to="/Count">Count</Link>
 
@@ -70,29 +71,32 @@ function App() {
 
 </Routes> */}
 
-        
 
 
 
-       
-    
-    
 
 
 
-        <ApiCall/>
-
-       {/* <ApiCallTwo/> */}
 
 
-       
 
-        {/* <Formone /> */}
 
+        {/* <ApiCall/> */}
+
+        <ApiCallTwo />
+
+
+
+
+        {/* <Formone/> */}
         {/* <Formtwo/> */}
 
 
         {/* <GroceryList /> */}
+
+
+
+        
 
 
 

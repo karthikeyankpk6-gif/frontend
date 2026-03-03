@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { CounterContext } from './context/CounterContext'
 
 
 
@@ -7,6 +8,7 @@ import React, { useState } from 'react'
 
 function Rollno(){
 
+    
     const[count,setcount]=useState(0)
      const handleadd=()=>{
         setcount(count+1)
@@ -22,7 +24,7 @@ function Rollno(){
 
             <h1>COUNTING={count}</h1>
 
-            <button onClick={handleadd}>click</button>
+            <button onClick={handleadd} class="btn btn-primary ms-2">click</button>
 
             
 

@@ -10,8 +10,9 @@ import CompB from "./CompB"
 
 function CompA(){
 
-  const{count,handleadd}=useContext(CounterContext)
+  const{count,handlecount}=useContext(CounterContext)
 
+  
  
 
   
@@ -28,10 +29,14 @@ function CompA(){
         <div>
 
           <h2>ONE-{count}</h2>
-          <button onClick={handleadd} class="btn btn-primary ms-2">CLICK</button>
-
+          <button onClick={handlecount} class="btn btn-primary">ADD</button>
 
           <CompB/>
+
+          
+
+
+          
 
            
 
