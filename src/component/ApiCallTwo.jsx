@@ -4,10 +4,11 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 
-function ApiCallTwo() {
-    const inputref=useRef(null);
 
-    const { handleSubmit, register, formState: { errors } } = useForm()
+function ApiCallTwo() {
+    const inputref = useRef(null);
+
+    const { handleSubmit, register, formState:{ errors } } = useForm()
 
 
 
@@ -36,7 +37,7 @@ function ApiCallTwo() {
                     <h2>KRT 😀 </h2>
 
                     <div class="input-group">
-                        <label>NAME</label>
+                        <label>E-MAIL</label>
                         <input ref={inputref} {...register("name", {
                             required: "name is required",
                             minLength: {
@@ -62,13 +63,17 @@ function ApiCallTwo() {
                         {errors.age && <p style={{ color: "red" }}>{errors.age.message}</p>}
                     </div>
                     <br />
-                    <button onClick={handleSubmit(handleadd)} >SUBMIT</button>
+                    <button onClick={handleSubmit(handleadd)} class="loginbtn" >SUBMIT</button>
                     <p class="register-link">
                         Don't have an account ? <a href="https://help.instagram.com/3257948324491837/?helpref=uf_share">Register</a>
                     </p>
 
                 </form>
             </div>
+
+
+            
+
 
 
 

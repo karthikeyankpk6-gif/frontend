@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 function Formtwo(){
 
-    const inputref = useRef(null);
+    
     const{handleSubmit,register}=useForm()
     
 
@@ -18,9 +18,9 @@ function Formtwo(){
 
     
 
-    useEffect(()=>{
-        inputref.current.focus()
-    })
+    // useEffect(()=>{
+    //     inputref.current.focus()
+    // })
     
 
     
@@ -30,7 +30,7 @@ function Formtwo(){
         <div>
 
            <label>NAME:</label>
-           <input {...register("name")}placeholder="enter" ref={inputref}/>
+           <input {...register("name")}placeholder="enter" />
            <br/>
            <label>AGE:</label>
             <input {...register("age")}placeholder="enter"/>

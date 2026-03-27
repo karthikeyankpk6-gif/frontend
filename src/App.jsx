@@ -26,36 +26,36 @@ function App() {
   return (
     <div>
 
+
+
+
+
+
+
       <CounterProvider>
 
 
 
 
 
+        {/* <BrowserRouter> */}
 
 
 
+          {/* <Count /> */}
+
+          {/* <Navbar/>  */}
+
+          {/* <Name/> */}
+
+          {/* <Product/> */}
+
+          {/* <CompA/> */}
+
+          {/* <Navbar/>  */}
 
 
-
-      {/* <BrowserRouter> */}
-
-
-
-        {/* <Count /> */}
-
-        {/* <Navbar/>  */}
-
-        {/* <Name/> */}
-
-        {/* <Product/> */}
-
-        {/* <CompA/> */}
-
-        {/* <Navbar/>  */}
-
-
-        {/* <Link to="/">home/</Link>
+          {/* <Link to="/">home/</Link>
          <Link to="/Navbar">Navbar/</Link>
           <Link to="/Count">Count</Link>
 
@@ -81,22 +81,20 @@ function App() {
 
 
 
-        {/* <ApiCall/> */}
+          <ApiCall/>
 
-        <ApiCallTwo />
-
-
-
-
-        {/* <Formone/> */}
-        {/* <Formtwo/> */}
-
-
-        {/* <GroceryList /> */}
+          {/* <ApiCallTwo /> */}
 
 
 
-        
+
+          {/* <Formone/> */}
+          {/* <Formtwo/> */}
+
+
+          {/* <GroceryList /> */}
+         
+            
 
 
 
@@ -117,7 +115,16 @@ function App() {
 
 
 
-      {/* </BrowserRouter> */}
+
+
+
+
+
+
+
+
+
+        {/* </BrowserRouter> */}
 
       </CounterProvider>
 

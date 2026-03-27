@@ -33,7 +33,7 @@ export default function ApiCall() {
       {/* <button onClick={handleapi} class="btn btn-primary">ADD</button> */}
 
 
-      {apidata.map((da) => (
+      {/* {apidata.map((da) => ( */}
 
 
 
@@ -44,13 +44,117 @@ export default function ApiCall() {
 
 
 
-<div>
+
+      <div>
+
+
+        <div>
+
+          <title>Food Portfolio</title>
+          <link rel="stylesheet" href="style.css" />
+          <div />
+
+
+          <header>
+            <h2>My Food World 🍔</h2>
+            <nav>
+              <a href="#">Home</a>
+              <a href="#">Menu</a>
+              <a href="#">Contact</a>
+            </nav>
+          </header>
+
+
+          <section class="hero">
+            <h2>Delicious Food Everyday 😋</h2>
+            <p>Fresh | Tasty | Healthy</p>
+          </section>
+
+
+          <section class="food-container">
+
+            <div class="card1">
+              <img src="#" alt="" />
+              <h3>pizza</h3>
+              <p>Cheesy and hot pizza</p>
+
+            </div>
+
+            <div class="card2">
+              <img src="#" alt="" />
+              <h3>Burger</h3>
+              <p>Juicy grilled burger</p>
+            </div>
+
+            <div class="card3">
+              <img src="#" alt="" />
+              <h3>Biryani</h3>
+              <p>Spicy and tasty biryani</p>
+            </div>
+
+            <div class="card4">
+               <img src="#" alt="" />
+              <h3>Dessert</h3>
+              <p>Sweet treats</p>
+            </div>
+            <div class="card5">
+              <img src="#" alt="" />
+              <h3>thosa</h3>
+              <p>Sweet treats</p>
+            </div>
+            <div class="card6">
+              <img src="#" alt="" />
+              <h3>poori</h3>
+              <p>Sweet treats</p>
+            </div>
+
+<div class="hi">
+            <h3>Delivery Now ?..</h3>
+</div>
+          </section>
 
 
 
 
 
-        {/* <div class="card">
+          <div class="soo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam fugiat provident quibusdam. Atque minus ducimus tempore quod repudiandae iure nulla, explicabo aperiam, quo ipsam vitae ea animi similique eveniet?</div>
+
+
+
+         
+
+          <section >
+            <div class="two">
+              <h2>EVENING SPECIAL 😋</h2>
+              <h4>1.biriyani</h4>
+              <h4>2.fried rice</h4>
+              <h4>3.chicken biriyani</h4>
+            </div>
+           
+
+          </section>
+
+         <div class="three">
+          <h2>JUICE ITEMS(all time)</h2>
+          <h3>1.rose milk</h3>
+          <h3>2.badham milk</h3>
+          <h3>3.lemon juice</h3>
+         </div>
+           <footer>
+            <p>© 2026 My Food Portfolio</p>
+          </footer>
+
+        </div>
+      </div>
+
+
+
+      {/* ))} */}
+
+
+
+
+      {/* <div class="card">
             <div class="badge">SPECIAL SALE</div>
             <div class="tilt">
               <div class="img"><img src={da.image} alt="Premium Laptop" /></div>
@@ -90,44 +194,7 @@ export default function ApiCall() {
                 </div>
               </div>
             </div>
-          </div>
           </div> */}
-        
-
-          <figure class="snip1418"><img src={da.image} alt="sample85"/>
-  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
-  <figcaption>
-    <h3>Pudol Doux</h3>
-    <p>All this modern technology just makes people try to do everything at once.</p>
-    <div class="price">
-      <s>$24.00</s>$19.00
-    </div>
-  </figcaption><a href="#"></a>
-</figure>
-<figure class="snip1418 hover"><img src={da.image} alt="sample96"/>
-  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
-  <figcaption>
-    <h3>Kurie Secco</h3>
-    <p>If you do the job badly enough, sometimes you don't get asked to do it again. </p>
-    <div class="price">
-      <s>$24.00</s>$19.00
-    </div>
-  </figcaption><a href="#"></a>
-</figure>
-<figure class="snip1418"><img src={"#"}alt="sample92"/>
-  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
-  <figcaption>
-    <h3>Zosaisan Invec</h3>
-    <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life. </p>
-    <div class="price">
-      <s>$24.00</s>$19.00
-    </div>
-  </figcaption><a href="#"></a>
-</figure>
-
-
-</div>
-  ))}
 
 
 
@@ -137,7 +204,32 @@ export default function ApiCall() {
 
 
 
-     </div >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div >
 
 
 

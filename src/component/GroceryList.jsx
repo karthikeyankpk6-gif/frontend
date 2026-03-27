@@ -6,67 +6,65 @@ export default function GroceryList() {
     const [item, setitem] = useState("")
     const [list, setlist] = useState([])
 
-
-    const handleadd = (e) => {
+    const handleone = (e) => {
         setitem(e.target.value)
-    }
 
-    // useEffect(() => {
-    //     handleget()
+    };
 
-
-    // },[])
+   
+    
 
 
     const handleget = async () => {
-        let dataget = await axios.get(" http://localhost:3000/todoList")
+        let dataget = await axios.get("http://localhost:3000/todoList")
         setlist(dataget.data)
-    }
-
+    };
 
     const handlepost = async () => {
         let body = {
             list: item
-        }
-        let datapost = await axios.post(" http://localhost:3000/todoList", body)
+        };
+        let getpost = await axios.post("http://localhost:3000/todoList", body);
 
-        handleget()
+       handleget()
+    };
 
-    }
 
-    const handleedit = async (data) => {
-        let dataedit = prompt("enter u name", data.list)
+    const handleedits = async (data) => {
+        let dataedits = prompt("enter u name", data.list)
         let body = {
             id: data.id,
-            list: dataedit
-
+            list: dataedits
         }
-        let dataedits = await axios.put(" http://localhost:3000/todoList/" + data.id, body)
-        handleget()
-    }
+        let getedits = await axios.put("http://localhost:3000/todoList/" + data.id, body);
+
+       handleget()
+    };
 
     const handledelete = async (id) => {
-        let dataedits = await axios.delete(" http://localhost:3000/todoList/" + id)
+        let datadelete = await axios.delete("http://localhost:3000/todoList/" + id)
+
         handleget()
-    }
 
 
+    };
 
 
 
 
     return (
         <div>
-            <h1>GROCERYLIST</h1>
+            <h2>GROCERYLIST</h2>
 
-            <input onChange={handleadd} placeholder="enter" />
-            <button onClick={handlepost} class="btn btn-primary ms-2">SUBMIT</button>
+            <input onChange={handleone} placeholder="enter" />
+            <button onClick={handlepost} class="btn btn-primary ms-2">submit</button>
 
 
             {list.map((da, i) => (
-                <div>
-                    <h3>{i + 1} .{da.list}</h3>
-                    <button onClick={() => { handleedit(da) }} class="btn btn-warning ms-2" >edits</button>
+                <div key={i}>
+                   <h2>{i+1} .{da.list}</h2>
+
+                    <button onClick={() => { handleedits(da) }} class="btn btn-warning ms-2">edits</button>
                     <button onClick={() => { handledelete(da.id) }} class="btn btn-danger ms-2">delete</button>
                 </div>
             ))}
@@ -95,12 +93,10 @@ export default function GroceryList() {
 
 
 
-
-
-
         </div>
     )
-
-
-
 }
+
+
+
+

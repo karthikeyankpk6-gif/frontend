@@ -12,6 +12,11 @@ function CompA(){
 
   const{count,handlecount}=useContext(CounterContext)
 
+
+
+
+  
+
   
  
 
@@ -29,18 +34,16 @@ function CompA(){
         <div>
 
           <h2>ONE-{count}</h2>
-          <button onClick={handlecount} class="btn btn-primary">ADD</button>
+          <button onClick={handlecount}>CLICK</button>
 
-          <CompB/>
-
+          
           
 
 
           
 
            
-
-         
+<CompB/>         
           
 
 

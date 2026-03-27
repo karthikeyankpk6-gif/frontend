@@ -126,7 +126,7 @@
 }
 
 .btn {
-    background: linear-gradient(45deg, #10b599, #27272A);
+    background: linear-gradient(45deg, #36d6be, #27272A);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -142,7 +142,7 @@
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #27272A, #3F3F46);
+    background: linear-gradient(45deg, #32d0be, #56566b);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .15)
 }
@@ -610,8 +610,8 @@ animation: Logo 4s ease infinite;
 
  */
 
-
-  * {
+  /* design */
+   /* * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -622,24 +622,25 @@ animation: Logo 4s ease infinite;
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
-      /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnlipKA9SLemmJpKhpe2XEfgu5zlFhxcaIcg&s"); */
-      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORj2dX3zp5HHr_hRhGsWEkoB-3v1TAV7m5A&s");
-  }
+      align-items: center;  */
 
-  .login-container {
-      /* background:cornsilk; */
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnlipKA9SLemmJpKhpe2XEfgu5zlFhxcaIcg&s"); */
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORj2dX3zp5HHr_hRhGsWEkoB-3v1TAV7m5A&s");
+  } 
+
+   .login-container { 
+      background:cornsilk;
       padding: 25px;
       border-radius: 10px;
-      height: 400px;
+      height: 450px;
       width: 300px;
       box-shadow: 0 10px 25px rgba(11, 111, 101, 0.2);
-      background: #242425;
-      /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwfF3_OhGHGwHD63evqfjELamXqalPlQdGQ&s"); */
-  }
+      background: #277684;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwfF3_OhGHGwHD63evqfjELamXqalPlQdGQ&s");
+   }  */
   
 
-  .login-form h2 {
+  /* .login-form h2 {
       text-align: center;
       margin-bottom: 25px;
       color: #f3f5f7;
@@ -675,7 +676,7 @@ animation: Logo 4s ease infinite;
   button {
       width: 87%;
       padding: 8px;
-      background: #f1f1f4;
+      background:#ccc;
       border: none;
       color: rgb(8, 8, 8);
       font-size: 13px;
@@ -709,4 +710,288 @@ animation: Logo 4s ease infinite;
       background-color: #3dabc4;
       color: #191a1b;
       padding: 5px;
+  }  */
+
+
+
+  /* HTML TAG */
+
+
+ 
+
+ 
+
+  /* h2:hover{
+    color: blue;
+    
   }
+ p::first-letter{
+    color: aqua;
+    font-variant: small-caps;
+ }
+
+ ::marker{
+    color: blueviolet;
+ } */
+
+ /* ::selection{
+    color: brown;
+    background-color: aqua;
+ } */
+
+ /* dialog::backdrop{
+    background-color: chartreuse;
+ } */
+
+
+
+
+ /* *{
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(61, 194, 150);
+ }
+
+@media screen and (min-width:480px) and (max-width:550px){
+    *{
+        background-color: rgb(236, 64, 89);
+    }
+    
+} */
+
+/* *{
+    margin: 10;
+    padding: 3px;
+    font-size: 4px;
+} */
+
+
+
+
+/* div{
+   
+    background-color: aqua;
+   
+    width: 100px;
+    height: 115px;
+    border: 1px,solid black;
+}
+
+div.one{
+    transform: rotate(60deg);
+}
+div.two{
+    transform: rotate(60deg);
+}
+div.three{
+    transform: rotate(60deg);
+} */
+
+/* *{
+    padding: 12px;
+    background-color: rgb(35, 141, 149);
+    
+} */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background: #4b4949;
+    color: rgb(253, 250, 250);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 25px;
+    
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    border-radius: 110px;
+    padding: 10px 25px; 
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyncGy4CRjHvBBqSvxpEHAPJgMLe68AvfVGg&s');
+    color: rgb(15, 15, 15);
+    box-shadow: #cac8c8;
+}
+
+/* Food Cards */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 65px;
+    background-color: #cac8c8;
+   
+}
+
+.card1 {
+    background: #42b1cf;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: hidden;
+    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEs81Q4neWhSIwUB34QbeDQk_ztiPwWDrSw&s");
+   
+
+}
+.card2 {
+    background: #42b1cf;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: hidden;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Jj2OgOCOLqwBJuPw_5X9kOo7woK_2vmIOA&s");
+    
+}
+.card3 {
+    background: #42b1cf;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: hidden;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaglIeeEyoNKCbDum-eG-GlisycLoxOT68g&s");
+}
+.card4 {
+    background: #42b1cf;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: hidden;
+    
+background-image: url("https://www.tasteofhome.com/wp-content/uploads/2025/08/Macarons_TOHFM23_226955_P2_MD_09_16_5bC.jpg?fit=750%2C750");
+}
+.card5 {
+    background: #42b1cf;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: hidden;
+    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8owQcHu1csisSyh9hXKZ1f7eWK2hmbp7ZQ&s");
+   
+
+}
+.card6 {
+    background: #42b1cf;
+    border-radius: 7px;
+    box-shadow: 0 4px 7px rgba(254, 253, 253, 0.2);
+    text-align: center;
+    overflow: hidden;
+    
+    background-image: url("https://www.awesomecuisine.com/wp-content/uploads/2020/03/poori-masala-kizhangu-500x375.jpg");
+   
+
+}
+
+.card img {
+ 
+    width: 100%;
+   
+}
+
+.card1:hover {
+    transform: scale(1.05);
+   
+}
+.card2:hover {
+    transform: scale(1.05);
+   
+}
+.card3:hover {
+    transform: scale(1.05);
+   
+}
+.card4:hover {
+    transform: scale(1.05);
+   
+}
+.card5:hover {
+    transform: scale(1.05);
+   
+}
+.card6:hover {
+    transform: scale(1.05);
+   
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: rgb(250, 249, 249);
+    text-align: center;
+    padding: 15px;
+}
+.soo{
+    justify-content: center;
+    padding: 100px;
+    
+
+
+}
+.two h2{
+    padding: top;
+   justify-self: center;
+   border-radius: 10px;
+    color: rgb(21, 21, 21);
+    background-image: -webkit-image-set("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaH8bbJTj5Sufkj55o3yKk5aMHoUcsoWJfw&s");
+    
+}
+.two h4{
+   justify-self: center;
+}
+.three h2{
+
+  
+    justify-self: center;
+    border-radius: 10px;
+   
+   color: rgb(14, 14, 14);
+    background-image: -webkit-image-set("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTSP974pbH9vBwI7NgxCT7yV83hUTYhl3Kw&s");
+}
+.three h3{
+    justify-self: center;
+}
+
+.hi{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+ 
+ 
+
+
+
+  
